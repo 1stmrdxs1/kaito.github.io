@@ -1,0 +1,35 @@
+p,p1,h1,h2{
+color: rgb(201, 45, 45);
+font-size: 15px;
+padding: 0;
+margin: 0;
+}
+p:hover{
+    color: red;
+    background: black;
+
+}
+img{
+    vertical-align: middle;
+    width: 10%;
+}
+.hinh {
+    top:0;
+    left:0;
+    width: 0;
+    overflow: hidden;
+}
+.hinh img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
